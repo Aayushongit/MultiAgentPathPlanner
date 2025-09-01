@@ -30,6 +30,46 @@ The schedule is made using hamiltonian cycles.
 
 
 
-Usage:
+## Available Algorithms
 
-	python search_heuristic.py task
+### Single Agent Pathfinding
+- **A* Algorithm**: Optimal pathfinding with heuristic search
+- **Dijkstra Algorithm**: Guaranteed shortest path algorithm
+- **D* Algorithm**: Dynamic pathfinding for changing environments
+- **Jump Point Search (JPS)**: Optimized A* for grid-based pathfinding
+- **Bidirectional BFS**: Breadth-first search from both start and goal
+- **RRT Algorithm**: Rapidly-exploring Random Tree for complex spaces
+
+### Multi-Agent Pathfinding
+- **CBS Algorithm**: Conflict-Based Search for multi-agent coordination
+
+## Usage
+
+### Original Multi-Agent Task Solver
+```bash
+python search_heuristic.py task
+```
+
+### Individual Algorithm Usage
+```bash
+# A* Algorithm
+python astar_algorithm.py
+
+# Dijkstra Algorithm  
+python dijkstra_algorithm.py
+
+# D* Algorithm
+python dstar_algorithm.py
+
+# Jump Point Search
+python jps_algorithm.py
+
+# Bidirectional BFS
+python bidirectional_bfs.py
+
+# RRT Algorithm
+python rrt_algorithm.py
+
+# Conflict-Based Search (Multi-Agent)
+python cbs_algorithm.py
+```
